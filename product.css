@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.TeknoLogo{
+    width: 150px;
+    cursor: pointer;
+}
+.menu_icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+nav ul li hover{
+    color: #ff5ea2;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(235deg,#12bbef,rgb(177, 139, 238),#ff005e);
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    border-radius: 2%;
+
+}
+.mehsul_container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.mehsul_container .card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 5%;
+
+}
+
+.mehsul_container .card .imgBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 150px 0;
+    transition: 0.5s ease-in-out;
+    max-width: 78%;
+}
+.mehsul_container .card:hover .imgBx{
+    transform: translateY(-5px);
+    backdrop-filter: blur(15px);
+}
+.mehsul_container .card .imgBx img{
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    transition: 0.5s ease-in-out;
+}
+.mehsul_container .card:hover .imgBx img{
+    transform: translate(-10px,-30px) rotate(-5deg) scale(1.1);
+}
+.mehsul_container .card .imgBx h2{
+    color: #fff; 
+    font-weight: 500;
+}
+.mehsul_container .card:hover .imgBx h2{
+   font-size: 25px;
+}
+.mehsul_container .card .content{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.mehsul_container .card:hover .content{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
+
+.mehsul_container .card .content .model,
+.mehsul_container .card .content .color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+.mehsul_container .card .content .model h3,
+.mehsul_container .card .content .color h3{
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.mehsul_container .card .content .model span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: #111; 
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.mehsul_container .card .content .color span{
+     width: 20px;
+     height: 20px;
+     background: #f00;
+     border-radius: 50%;
+     margin: 0 5px;
+     border: 2px solid #fff;
+     box-sizing: border-box;
+     cursor: pointer;
+}
+.mehsul_container .card .content .color span:nth-child(2)
+{
+    background: #9bdc28;
+}
+.mehsul_container .card .content .color span:nth-child(3)
+{
+    background: #03a9f4;
+}
+.mehsul_container .card .content .color span:nth-child(4)
+{
+    background: #e91e63;
+}
+.mehsul_container .card a{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
